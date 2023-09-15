@@ -18,7 +18,8 @@ METHODOLOGY
 
 CNN model was created using three convolution layers and a single pool layer finally connected to two fully connected layers. The model architecture is as follows:
 
-![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/681d7e75-816a-4674-9c31-d05751706594)
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/5f5eacc3-37f3-409e-aeae-cd8df533f4c5)
+
 
 
 Then we use the ‘checker’ function for training. Loss criteria was cross entropy loss as it is a classification model while the optimizer used was Adam. Learning rate was 0.1 while the batch size was 500.
