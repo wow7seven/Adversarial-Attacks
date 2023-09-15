@@ -80,12 +80,12 @@ Train accuracy = **78.73%**, Test Accuracy = **64.76%** (Before Attack)
 |--------------|-------|------|-------|------|-------|------|-------|------|
 | **Accuracy** | 2.25  | 0.27 | 0.3   | 0.65 | 1.27  | 1.94 | 2.61  | 3.14 |
 
-![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/10c21eaf-733a-4288-9d80-8fcba0413663)
-
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/6c72ed94-a1c3-4825-a9a9-0c2cf8c8c4aa)
 
 The first image is an original image without attack, the second perturbed image is after we attack the image using FGSM while the third image is the difference between the two. To the naked eye the first two images look almost similar but the model misclassified it where the ground truth was a truck and the model predicted it as a car.
 
-**![](media/ea7dac1d9eee651e4bd94edefd3b6f25.png)**
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/10c21eaf-733a-4288-9d80-8fcba0413663)
+
 
 **Part 2**
 
