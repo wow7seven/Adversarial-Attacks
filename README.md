@@ -12,7 +12,7 @@ Using deepfake/faceswap images and using pre trained detection models and fine t
 
 METHODOLOGY
 
-**Question 1**
+**Experiment 1**
 
 **Part 1**
 
@@ -56,13 +56,13 @@ Using a CNN model of the following architecture we make a detection model.
 
 Using FGSM attack and giving normal images as label 1 and perturbed images label as 0. We train our model to classify attacks on not. Hence converting detection into a simpler classification problem.
 
-**Question 2**
+**Experiment 2**
 
 Using a github repository[[3]](https://github.com/cedro3/sber-swap/blob/main/SberSwapInference.ipynb) for generating faceswap images and storing them in folders Celebs (orignal), Targets(faceswaps). Further using 50 from each folder for train and another 50 for test dataset. Train and test folders both were further divided into two folders 0 and 1. ) signifying original image and 1 implying face swap image. The train and test folders were stored in a folder named data.After resizing it to 32x32 running the pretrained detection model for fine tuning. Finally testing the fine tuned model on the test dataset to obtain results.
 
 OBSERVATIONS
 
-**Question 1**
+**Experiment 1**
 
 **Part 1**
 
@@ -145,7 +145,7 @@ Training accuracy = 100%
 
 Testing accuracy = 99.99%
 
-**Question 2**
+**Experiment 2**
 
 Example:
 
@@ -162,7 +162,7 @@ Test accuracy = 48%
 
 # RESULTS & CONCLUSIONS
 
-**Question 1**
+**Experiment 1**
 
 **Part 1**
 
@@ -178,7 +178,7 @@ Mask based attacks, although successful dont give as good results as PGD or FGSM
 
 Detection model runs very well and gives training accuracy of 100% and testing of 99.99%. This can mean two things : either our detection model works really well or our attack is very poor and can easily be identified. Based on the images above of the FGSM attack it can be understood as a combination of both that the FGSM model although gives a lot of drop in accuracy but can be identified as an attacked image.
 
-**Question 2**
+**Experiment 2**
 
 The detection models performance was not up to the mark this can be due to two major reasons. Firstly faceswap generated were quite good and can be deceptive to humans as well. These look much better than FGSM attack images. Secondly resizing the image to a small size 32x32 making it harder for the model to look into details of images. Thus model performance isn't good. However one may think around 50% accuracy can be a cause that the model predicts either all 0(orignal) or 1(fakes) but that is not the case as read from predicted outputs. This implies the faceswaps generated are of real good quality and it further helps when we downsize all images to make the attack even more efficient. Since the dataset is small it would be difficult to train a good model without overfitting. Hence accuracy can be improved by using a larger dataset.
 
