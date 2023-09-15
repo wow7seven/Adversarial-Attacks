@@ -18,7 +18,8 @@ METHODOLOGY
 
 CNN model was created using three convolution layers and a single pool layer finally connected to two fully connected layers. The model architecture is as follows:
 
-![](media/4b54c85690b0ff9e458c23183162ac46.png)
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/681d7e75-816a-4674-9c31-d05751706594)
+
 
 Then we use the ‘checker’ function for training. Loss criteria was cross entropy loss as it is a classification model while the optimizer used was Adam. Learning rate was 0.1 while the batch size was 500.
 
@@ -66,7 +67,7 @@ OBSERVATIONS
 
 **CNN Classification**
 
-**![](media/d4183bf9ff0c3ef00fd7849350018931.png)![](media/92a819c70cf7ba9fd89df880e9635d76.png)**
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/95d85c9c-463f-4d47-9588-991c9192bf00)
 
 **FGSM attack**
 
@@ -78,7 +79,8 @@ Train accuracy = **78.73%**, Test Accuracy = **64.76%** (Before Attack)
 |--------------|-------|------|-------|------|-------|------|-------|------|
 | **Accuracy** | 2.25  | 0.27 | 0.3   | 0.65 | 1.27  | 1.94 | 2.61  | 3.14 |
 
-**![](media/56438be6d909fdbd1e5c6825854e0e35.png)**
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/10c21eaf-733a-4288-9d80-8fcba0413663)
+
 
 The first image is an original image without attack, the second perturbed image is after we attack the image using FGSM while the third image is the difference between the two. To the naked eye the first two images look almost similar but the model misclassified it where the ground truth was a truck and the model predicted it as a car.
 
@@ -100,7 +102,8 @@ ON ResNET
 |--------------|------|------|------|------|------|
 | **Accuracy** | 1.28 | 0.72 | 1.35 | 2.30 | 3.06 |
 
-![](media/787531b1827d031f75606eecea1af64d.png)
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/94ad36a2-2bd9-4a3a-b40a-a838c833a61b)
+
 
 ON ShuffleNet
 
@@ -108,7 +111,8 @@ ON ShuffleNet
 |--------------|------|------|------|------|------|
 | **Accuracy** | 0.19 | 0.31 | 0.9  | 1.81 | 2.71 |
 
-![](media/e6e2d07da87dff8f924908b61be469a8.png)
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/11b16fde-13b3-464c-852f-960f5201472f)
+
 
 FOR **MASKED** BASED ATTACK:
 
@@ -122,7 +126,8 @@ ON ResNET
 |--------------|------|------|------|------|------|
 | **Accuracy** | 9.39 | 9.65 | 9.87 | 9.88 | 9.48 |
 
-![](media/04e7e0e283e212414e7cf9141ac84b11.png)
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/7baafbe5-1347-4949-8724-a49b4a0b94c2)
+
 
 ON ShuffleNet
 
@@ -130,7 +135,8 @@ ON ShuffleNet
 |--------------|------|------|------|------|------|
 | **Accuracy** | 9.49 | 9.89 | 9.85 | 9.92 | 9.87 |
 
-![](media/8052d6dd48c49ff9d8e0dc8d1c69579c.png)
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/f630aca1-0b9f-4d2b-a465-b446f4f91720)
+
 
 **Part 3**
 
@@ -144,7 +150,8 @@ Example:
 
 My image Celebrity Face swapped
 
-![](media/c65fb94d900809c661100e93d6ff6af1.png) ![](media/fc2c5c2cae93433960cbfffcb0e95b1e.png) ![](media/d18cf9ddcbe65f3b602e90d3d6b6d7ec.png)
+![image](https://github.com/wow7seven/Adversarial-Attacks/assets/100991200/ce4049ad-cb77-46e1-80c3-ffd50a1743c3)
+
 
 The finetuning of detection model was as follows:
 
