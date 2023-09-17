@@ -1,5 +1,3 @@
-Programming Assignment 1
-
 *Dependable Artificial Intelligence*
 
 [Rachit (B20AI032)](mailto:rachit.2@iitj.ac.in)
